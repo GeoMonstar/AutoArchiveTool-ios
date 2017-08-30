@@ -9,22 +9,22 @@ project_path=$(pwd)
 now=$(date +"%Y_%m_%d_%H_%M_%S")
 
 #指定项目的scheme名称
-scheme="FSJ"
+scheme="your project nameXXX"
 #指定要打包的配置名
 configuration="Adhoc"
 #指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development, 和developer-id，即xcodebuild的method参数
 export_method='ad-hoc'
 
 #指定项目地址
-workspace_path="$project_path/FSJ.xcworkspace"
+workspace_path="$project_path/XXX.xcworkspace"
 #指定输出路径
-output_path=$(pwd)
+output_path="$(pwd)/release"
 #指定输出归档文件地址
-archive_path="$output_path/FSJ_${now}.xcarchive"
+archive_path="$output_path/XXX_${now}.xcarchive"
 #指定输出ipa地址
-ipa_path="$output_path/FSJ_${now}.ipa"
+ipa_path="$output_path/XXX_${now}.ipa"
 #指定输出ipa名称
-ipa_name="FSJ_${now}.ipa"
+ipa_name="XXX_${now}.ipa"
 #获取执行命令时的commit message
 commit_msg="$1"
 
